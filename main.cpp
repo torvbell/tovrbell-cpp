@@ -7,14 +7,11 @@
 
 #include <iostream>
 #include "torvbell-point/torvbell-point.cpp"
+#include "torvbell-small-project/torvbell-builder-cpp/bootstrap-build.h"
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-
-    int a = 10; // 定义一个int类型的变量 a
-
-    cout << get_int_point(a) << endl;
-
+    set_default_director("/");
     return 0;
 }
