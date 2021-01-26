@@ -6,28 +6,15 @@
 //
 
 #include <iostream>
-#include "torvbell-int.hpp"
-#include "torvbell-long.hpp"
+#include "torvbell-point/torvbell-point.cpp"
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    
-    // ------------------ Int 关键字 ----------------------
-    
-    print_int_max();
-    sizeof_int();
-    
-    // ----------------------------------------
-    
-    cout << "\n-------------------------------\n" << endl;
-    
-    // ------------------ Long 关键字 ----------------------
-    
-    print_long_max();
-    sizeof_long();
-    
-    // ----------------------------------------
- 
+
+    int a = 10; // 定义一个int类型的变量 a
+
+    cout << get_int_point(a) << endl;
+
     return 0;
 }
