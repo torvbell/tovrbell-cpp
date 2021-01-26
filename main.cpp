@@ -15,6 +15,10 @@ using namespace std;
 
 int main(int argc, const char *argv[])
 {
-    cout << "计算Int数组大小: ["<< _clac_sizeof_arr() << "]" << endl;
+    int arr[] = {1, 2, 3, 4, 5, 6, 7};
+    clac_sizeof_arr(arr);
+
+    dimensional_t();
+
     return 0;
 }

@@ -11,8 +11,27 @@
  * @param _int_array int类型的数组
  * @return 数组占用空间大小
  */
-int _clac_sizeof_arr()
+void clac_sizeof_arr(int arr[])
 {
-    int arr[] = {1, 2, 3, 4, 5, 6, 7};
-    return sizeof(arr) / sizeof(int);
+    std::cout << "in func..." << std::endl;
+    std::cout << "数组地址: " << arr << std::endl;
+    std::cout << "数组大小: " << sizeof(&arr) << std::endl;
+    std::cout << "数组元素总数: " << sizeof(&arr) / sizeof(arr[0]) << std::endl;
+}
+
+// 二维数组（Two-dimensional）
+void dimensional_t()
+{
+    int arr[2][3] = {{1, 2, 3},
+                     {2, 3, 4}};
+
+    for(auto & i : arr)
+    {
+        for(int j : i)
+        {
+            std::cout << j << std::endl;
+        }
+    }
+
+
 }
