@@ -8,10 +8,11 @@
 #include <iostream>
 #include "torvbell-point/torvbell-point.cpp"
 #include "torvbell-small-project/torvbell-builder-cpp/bootstrap-build.h"
+#include "torvbell-console-input/torvbell-console-input.cpp"
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    set_default_director("/");
+    _int_input();
     return 0;
 }
