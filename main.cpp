@@ -6,13 +6,15 @@
 //
 
 #include <iostream>
-#include "torvbell-point/torvbell-point.cpp"
-#include "torvbell-small-project/torvbell-builder-cpp/bootstrap-build.h"
-#include "torvbell-console-input/torvbell-console-input.cpp"
+#include "point/torvbell-point.cpp"
+#include "small-project/torvbell-builder-cpp/bootstrap-build.h"
+#include "console-input/torvbell-console-input.cpp"
+#include "array/torvbell-array.cpp"
 
 using namespace std;
 
-int main(int argc, const char * argv[]) {
-    _int_input();
+int main(int argc, const char *argv[])
+{
+    cout << "计算Int数组大小: ["<< _clac_sizeof_arr() << "]" << endl;
     return 0;
 }
