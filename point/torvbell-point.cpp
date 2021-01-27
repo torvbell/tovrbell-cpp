@@ -10,6 +10,6 @@
  */
 int *get_int_point(int int_v)
 {
-    return &int_v;
+    return NULL;
 }
 

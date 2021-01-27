@@ -10,15 +10,12 @@
 #include "small-project/torvbell-builder-cpp/bootstrap-build.h"
 #include "console-input/torvbell-console-input.cpp"
 #include "array/torvbell-array.cpp"
+#include "io/torvbell-rio.cpp"
 
 using namespace std;
 
-int main(int argc, const char *argv[])
+int main()
 {
-    int arr[] = {1, 2, 3, 4, 5, 6, 7};
-    clac_sizeof_arr(arr);
-
-    dimensional_t();
-
+    // read("/Users/wuyanzu/project/c:c++/torvbell-cpp/io/torvbell-rio.cpp");
     return 0;
 }
