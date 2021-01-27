@@ -25,13 +25,22 @@ void dimensional_t()
     int arr[2][3] = {{1, 2, 3},
                      {2, 3, 4}};
 
-    for(auto & i : arr)
+    // 便利二维数组
+    for (auto &i : arr)
     {
-        for(int j : i)
+        for (int j : i)
         {
             std::cout << j << std::endl;
         }
     }
 
+    int total_rem = sizeof(arr);
+    int row_rem = sizeof(arr[0]);
+    int first_elem = sizeof(arr[0][0]);
+
+    std::cout << "二维数组占用的内存空间为[" << total_rem << "]" << std::endl;
+    std::cout << "二维数组第一行占用的内存空间为[" << row_rem << "]" << std::endl;
+    std::cout << "二维数组第一个元素占用的内存空间为[" << first_elem << "]" << std::endl;
+    std::cout << "二维数组一共有[" << total_rem / row_rem << "]行" << "[" << row_rem / first_elem << "]列" << std::endl;
 
 }
