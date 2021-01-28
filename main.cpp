@@ -11,11 +11,13 @@
 #include "console-input/torvbell-console-input.cpp"
 #include "array/torvbell-array.cpp"
 #include "io/torvbell-rio.cpp"
+#include "generic.cpp"
 
 using namespace std;
 
 int main()
 {
-    // read("/Users/wuyanzu/project/c:c++/torvbell-cpp/io/torvbell-rio.cpp");
+    int r = max(1,2);
+    cout << r << endl;
     return 0;
 }
